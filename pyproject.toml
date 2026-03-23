@@ -1,15 +1,14 @@
 [project]
 name = "comfyui-prompt-assembler"
-description = "Assemble prompts from multiple string inputs with ON/OFF toggles per slot."
+description = "Modular prompt assembly nodes for ComfyUI — 8-slot, compact 4-slot, and weighted 6-slot with attention syntax"
 version = "1.0.0"
-license = "MIT"
-requires-python = ">=3.8"
+license = { file = "LICENSE" }
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/YOUR_USERNAME/comfyui-prompt-assembler"
+Repository = "https://github.com/jeremieLouvaert/comfyui-prompt-assembler"
 
 [tool.comfy]
-PublisherId = "your_publisher_id"
+PublisherId = "akurate"
 DisplayName = "Prompt Assembler"
-Icon = "🧩"
+Icon = ""
