@@ -37,7 +37,7 @@ Search for **Prompt Assembler** in the ComfyUI Manager and install.
 ### Option B — Manual
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/YOUR_USERNAME/comfyui-prompt-assembler.git
+git clone https://github.com/jeremieLouvaert/comfyui-prompt-assembler.git
 ```
 Restart ComfyUI. No pip dependencies required.
 

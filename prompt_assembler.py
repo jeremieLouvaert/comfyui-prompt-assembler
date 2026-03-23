@@ -45,7 +45,7 @@ class PromptAssembler:
     RETURN_TYPES = ("STRING", "STRING",)
     RETURN_NAMES = ("assembled_prompt", "debug_info",)
     FUNCTION = "assemble"
-    CATEGORY = "utils/text"
+    CATEGORY = "AKURATE"
     DESCRIPTION = "Assembles multiple prompt strings into one, with toggles to enable/disable each slot."
 
     SEPARATOR_MAP = {
@@ -130,7 +130,7 @@ class PromptAssemblerCompact:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("assembled_prompt",)
     FUNCTION = "assemble"
-    CATEGORY = "utils/text"
+    CATEGORY = "AKURATE"
     DESCRIPTION = "Compact 4-slot prompt assembler with toggles."
 
     SEPARATOR_MAP = {
@@ -199,7 +199,7 @@ class PromptAssemblerWeighted:
     RETURN_TYPES = ("STRING", "STRING",)
     RETURN_NAMES = ("assembled_prompt", "raw_prompt",)
     FUNCTION = "assemble"
-    CATEGORY = "utils/text"
+    CATEGORY = "AKURATE"
     DESCRIPTION = "Prompt assembler with per-slot attention weights. Wraps each fragment in (prompt:weight) syntax."
 
     SEPARATOR_MAP = {
