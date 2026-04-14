@@ -50,7 +50,7 @@ class PromptAssembler:
 
     SEPARATOR_MAP = {
         "comma + space": ", ",
-        "newline": "\n",
+        "newline": "\n\n",
         "space": " ",
         "period + space": ". ",
     }
@@ -135,7 +135,7 @@ class PromptAssemblerCompact:
 
     SEPARATOR_MAP = {
         "comma + space": ", ",
-        "newline": "\n",
+        "newline": "\n\n",
         "space": " ",
         "period + space": ". ",
     }
@@ -204,7 +204,7 @@ class PromptAssemblerWeighted:
 
     SEPARATOR_MAP = {
         "comma + space": ", ",
-        "newline": "\n",
+        "newline": "\n\n",
         "space": " ",
     }
 

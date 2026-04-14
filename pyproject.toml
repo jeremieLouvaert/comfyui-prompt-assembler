@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-prompt-assembler"
 description = "Modular prompt assembly nodes for ComfyUI — 8-slot, compact 4-slot, and weighted 6-slot with attention syntax"
-version = "1.0.0"
+version = "1.1.0"
 license = { file = "LICENSE" }
 dependencies = []
 
