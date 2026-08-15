@@ -1,4 +1,4 @@
-# 🧩 ComfyUI Prompt Assembler
+# ComfyUI Prompt Assembler
 
 A set of utility nodes for ComfyUI that let you **assemble prompts from multiple string inputs**, each with an **ON/OFF toggle** to include or exclude it from the final output.
 
@@ -6,21 +6,21 @@ A set of utility nodes for ComfyUI that let you **assemble prompts from multiple
 
 ## Nodes
 
-### 🧩 Prompt Assembler (8 slots)
+### Prompt Assembler (8 slots)
 The full-featured version.
 
 | Feature | Details |
 |---|---|
 | **Inputs** | 8 optional string inputs (`prompt_1` … `prompt_8`) |
-| **Toggles** | 8 boolean switches (`enable_1` … `enable_8`) — ON by default |
+| **Toggles** | 8 boolean switches (`enable_1` … `enable_8`), ON by default |
 | **Separator** | `comma + space`, `newline`, `space`, `period + space`, or `custom` |
 | **Outputs** | `assembled_prompt` (the final string) + `debug_info` (slot status summary) |
 
-### 🧩 Prompt Assembler Compact (4 slots)
+### Prompt Assembler Compact (4 slots)
 A lightweight version with 4 slots and a single string output. Great for simple workflows.
 
-### 🧩 Prompt Assembler Weighted (6 slots)
-Advanced version — each slot has a **weight slider** (0.0–2.0). Non-1.0 weights automatically wrap the fragment in `(prompt:weight)` attention syntax.
+### Prompt Assembler Weighted (6 slots)
+Advanced version. Each slot has a **weight slider** (0.0-2.0). Non-1.0 weights automatically wrap the fragment in `(prompt:weight)` attention syntax.
 
 | Output | Description |
 |---|---|
@@ -31,10 +31,10 @@ Advanced version — each slot has a **weight slider** (0.0–2.0). Non-1.0 weig
 
 ## Installation
 
-### Option A — ComfyUI Manager
+### Option A: ComfyUI Manager
 Search for **Prompt Assembler** in the ComfyUI Manager and install.
 
-### Option B — Manual
+### Option B: manual
 ```bash
 cd ComfyUI/custom_nodes
 git clone https://github.com/jeremieLouvaert/comfyui-prompt-assembler.git
@@ -43,7 +43,7 @@ Restart ComfyUI. No pip dependencies required.
 
 ---
 
-## Usage Example
+## Usage example
 
 ```
 [ String node: "a beautiful landscape" ] ──► prompt_1   enable_1: ✅ ON
@@ -63,7 +63,7 @@ Slot 3 ("watercolor painting") is toggled OFF and excluded.
 
 ## Tips
 
-- **Connect any STRING output** to the prompt slots — text nodes, other assemblers, LLM outputs, etc.
+- **Connect any STRING output** to the prompt slots: text nodes, other assemblers, LLM outputs, etc.
 - **Unconnected slots are ignored**, so you only need to wire up the ones you use.
 - The **debug output** on the full 8-slot version is handy for troubleshooting which slots are active.
 - Use the **Weighted** version when you want to emphasize or de-emphasize specific parts of your prompt without editing the source strings.
