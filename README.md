@@ -1,5 +1,7 @@
 # ComfyUI Prompt Assembler
 
+![ComfyUI Prompt Assembler](assets/hero.jpg)
+
 A set of utility nodes for ComfyUI that let you **assemble prompts from multiple string inputs**, each with an **ON/OFF toggle** to include or exclude it from the final output.
 
 ---
